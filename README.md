@@ -10,6 +10,7 @@ Feel free to reference your Ruby calculator project.
 
 - Individual, [stage 1](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/classroom/rule-of-three.md#stage-1) project
 - Due before class, **DATE HERE**
+- Submit this project with a PR
 
 ## Learning Goals
 
@@ -30,7 +31,6 @@ In the required project, **our projects will NOT take user input,** and instead 
 1. Fork this project repo
 1. Clone this repo onto your computer
 1. Work on this project, mostly within `calculator.js`
-1. Submit this project with a PR
 
 ## Getting Started
 
