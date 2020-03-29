@@ -1,45 +1,10 @@
 # JS Calculator
 
-Build a calculator command line interface (CLI) that allows a user to perform arithmetic operations.
+## Introduction
 
-## Baseline
-- Create and enter a new directory for this project, such as:
-  + `$ mkdir js-calculator && cd js-calculator`
+One of the best ways to learn JavaScript syntax is to revisit familiar problems and concepts with our new language. We will be re-writing our calculator project in JavaScript!
 
-
-## Primary Requirements
-
-From this base code, write a program that simulates a calculator.
-
-The program should use the input operation and two numbers to provide the result of applying the operation to the two numbers.
-
-- The program should have support for these four operations:
-    - add (+)
-    - subtract (-)
-    - multiply (\*)
-    - and divide (/)
-
-Practice using variables, conditionals, and functions to build out this calculator program.
-
-### User Stories
-
-As a user, when I launch the calculator program with `$ node calculator.js`...
-- I want to be able to enter `2`, then `3`, then `+`, so that I can see that the sum of 2 and 3 is `5`
-- I want to be able to enter `2`, then `3`, then `-`, so that I can see that the difference of 2 and 3 is `-1`
-- I want to be able to enter `2`, then `3`, then `*`, so that I can see that the product of 2 and 3 is `6`
-- I want to be able to enter `6`, then `3`, then `/`, so that I can see that 6 divided by 3 is `2`
-
-## Optional Enhancements
-- The program should accept both the name (`add`) and the symbol (`+`) for each possible operation.
-- Print out the formula in addition to the result, i.e. `2 + 2 = 4`
-- Add support for computing exponents (`2^4 = 2 * 2 * 2 * 2 = 16`).
-- Add support for the modulo operator (`10 % 3 = 1`).
-- Gracefully handle unexpected user input:
-  - What happens if the user input is empty (i.e., the user just pressed enter)?
-  - What happens if the user tries to add `hotdog` to `elephant`?
-- Add support for more complex expressions, i.e. `10 / (5 + 5) = 1`.
-
-# JS Calculator
+Feel free to reference your Ruby calculator project.
 
 ## At a Glance
 
@@ -56,11 +21,9 @@ As a user, when I launch the calculator program with `$ node calculator.js`...
 
 ## Objective
 
-We will build a calculator command line interface (CLI) that allows any user to interact with the command line to perform simple arithmetic. The program should ask the user to type in and enter in pieces of input. Based on the input that the user typed in, the program should output its evaluation.
+We will build a calculator command line interface (CLI) to perform simple arithmetic. The program should use an input variable that contains two numbers and an operation to provide the result of applying the operation to the two numbers.
 
 In the required project, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
-
-Feel free to reference your Ruby calculator project.
 
 ## Setup Requirements
 
