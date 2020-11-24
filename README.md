@@ -120,8 +120,8 @@ The following is a list of optionals. Should you be ambitious to continue workin
 
 ### Refactor to Accept User Input with `prompt`
 
-- Inside your project root directory, install `prompt` with npm. This package allows for gathering input from a user.
-  + `$ npm install prompt`
+- Inside your project root directory, install `prompt` with npm. This package allows for gathering input from a user.  The `package.json` file functions like a `Gemfile` and lists the JavaScript modules the project needs.
+  + `$ npm install`
   + When it's done, you should now have a directory called `node_modules`
 - Inside `calculator.js` in your editor and paste this code at the top of your file:
   ```javascript
