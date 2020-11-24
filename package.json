@@ -4,7 +4,7 @@
   "description": "A JavaScript Cli Calculator",
   "main": "calculator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "cd ./node_modules/prompt && npm install && cd ../.."
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
     "jest": "^26.6.3"
   },
   "dependencies": {
-    "prompt": "^1.0.0"
+    "prompt": "https://github.com/apolopena/prompt.git"
   }
 }
