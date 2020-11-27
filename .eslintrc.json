@@ -17,7 +17,7 @@
     "func-names": "off",
     "comma-dangle": ["warn", "only-multiline"],
     "quotes": [
-      "error",
+      1,
       "single",
       { "allowTemplateLiterals": true, "avoidEscape": true }
     ],
