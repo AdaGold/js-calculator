@@ -4,7 +4,9 @@
   "description": "A JavaScript Cli Calculator",
   "main": "calculator.js",
   "scripts": {
-    "postinstall": "cd ./node_modules/prompt && npm install && cd ../.."
+    "postinstall": "cd ./node_modules/prompt && npm install && cd ../..",
+    "start": "node index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
