@@ -54,6 +54,35 @@ We're starting the project with a variable (instead of a `gets.chomp` equivalent
 
 Feel free to alter or create the variables to your needs.
 
+### Sample Tests
+
+We have also included [tests in this project](./test/calculator.test.js).  You do not need to know how they work at present.  These tests simply insure that if your funciton is called with `promptInput` holding the value:
+
+```javascript
+{
+  num1: 3,
+  num2: 5,
+  operation: 'add',
+}
+```
+
+You will print: "3 + 5 = 8" with `console.log`.
+
+Similarly if `promptInput` has the value:
+
+```javaScript
+{
+  num1: 3,
+  num2: 4,
+  operation: '*',
+}
+
+```
+
+Your funciton will print "3 * 4 = 12".
+
+You can run these tests with the command:  `npm test`.
+
 ## Implementation Requirements
 
 When a user runs this program, the program should **read a variable within the program to represent user input.** That "user input" lives in an object with a structure like this:
