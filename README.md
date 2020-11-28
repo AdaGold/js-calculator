@@ -24,7 +24,7 @@ Feel free to reference your Ruby calculator project.
 
 We will build a calculator command line interface (CLI) to perform simple arithmetic. The program should use an input variable that contains two numbers and an operation to provide the result of applying the operation to the two numbers.
 
-In future projects, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
+Our JavaScript projects, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
 
 ## Setup Requirements
 
@@ -35,7 +35,7 @@ In future projects, **our projects will NOT take user input,** and instead **we 
 
 ## Getting Started
 
-You should write your program as a series of statements within the file `calculator.js`. Anyone with this file you should be able to run the command `npm start` to execute the program.
+You should write your program as a series of statements within the file `calculator.js`. Anyone with this file you should be able to run the command `node calculator.js` to execute the program.
 
 Look at the existing `calculator.js` file. There is a variable to represent example user input. Instead of using `gets.chomp` in this project (or the JavaScript equivalent to start), we will simply use variables like this one.
 
@@ -131,7 +131,7 @@ The program should use this input operation and two numbers to provide the resul
 
 ## Manual Testing
 
-We haven't dived into unit tests in JavaScript yet, so you may want to try to test your function manually.  You can run the function with `npm start`.
+We haven't dived into unit tests in JavaScript yet, so you may want to try to test your function manually.  You can run the function and use terminal-based user input with `npm start`, or you can run `calculator.js` manually with `node calculator.js`.  There is an example of manually testing the function in `calculator.js` as a comment.
 
 Before project submission, test and verify that your program works as expected with the following testing/verification requirements.
 

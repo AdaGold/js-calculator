@@ -20,7 +20,19 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '3',
       num2: '4',
-      operator: '+',
+      operation: '+',
+    });
+
+    expect(console.log).toHaveBeenCalled();
+    expect(console.log.mock.calls).toContainEqual(['3 + 4 = 7']);
+  });
+
+  test('3 + 4 = 7 with "add"', () => {
+
+    calculateUserInput({}, {
+      num1: '3',
+      num2: '4',
+      operation: 'add',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -31,7 +43,19 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '3',
       num2: '-4',
-      operator: '+',
+      operation: '+',
+    });
+
+    expect(console.log).toHaveBeenCalled();
+    expect(console.log.mock.calls).toContainEqual(['3 + -4 = -1']);
+  });
+
+  test('3 + -4 = -1 with "add"', () => {
+
+    calculateUserInput({}, {
+      num1: '3',
+      num2: '-4',
+      operation: 'add',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -43,7 +67,19 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '3',
       num2: '4',
-      operator: '*',
+      operation: '*',
+    });
+
+    expect(console.log).toHaveBeenCalled();
+    expect(console.log.mock.calls).toContainEqual(['3 * 4 = 12']);
+  });
+
+  test('3 * 4 = 12 with "multiply"', () => {
+
+    calculateUserInput({}, {
+      num1: '3',
+      num2: '4',
+      operation: 'multiply',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -55,7 +91,19 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '3',
       num2: '-4',
-      operator: '*',
+      operation: '*',
+    });
+
+    expect(console.log).toHaveBeenCalled();
+    expect(console.log.mock.calls).toContainEqual(['3 * -4 = -12']);
+  });
+
+  test('3 * -4 = -12, with "multiply', () => {
+
+    calculateUserInput({}, {
+      num1: '3',
+      num2: '-4',
+      operation: '*',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -67,7 +115,7 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '3',
       num2: '0',
-      operator: '*',
+      operation: '*',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -79,7 +127,19 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '15',
       num2: '3',
-      operator: '/',
+      operation: '/',
+    });
+
+    expect(console.log).toHaveBeenCalled();
+    expect(console.log.mock.calls).toContainEqual(['15 / 3 = 5']);
+  });
+
+  test('15 / 3 = 5 with "divide"', () => {
+
+    calculateUserInput({}, {
+      num1: '15',
+      num2: '3',
+      operation: 'divide',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -91,7 +151,7 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '-15',
       num2: '3',
-      operator: '/',
+      operation: '/',
     });
 
     expect(console.log).toHaveBeenCalled();
@@ -103,13 +163,11 @@ describe('calculateUserInput', () => {
     calculateUserInput({}, {
       num1: '15',
       num2: '0',
-      operator: '/',
+      operation: '/',
     });
 
     expect(console.log).toHaveBeenCalled();
     expect(console.log.mock.calls).toContainEqual(['You cannot divide by zero']);
   });
-
-
 });
 
