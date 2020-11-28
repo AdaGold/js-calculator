@@ -24,17 +24,18 @@ Feel free to reference your Ruby calculator project.
 
 We will build a calculator command line interface (CLI) to perform simple arithmetic. The program should use an input variable that contains two numbers and an operation to provide the result of applying the operation to the two numbers.
 
-In the required project, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
+Our JavaScript projects, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
 
 ## Setup Requirements
 
 1. Fork this project repo
 1. Clone this repo onto your computer
+1. Run `npm install` to install dependencies
 1. Work on this project, mostly within `calculator.js`
 
 ## Getting Started
 
-You should write your program as a series of statements within the file `calculator.js`. Anyone with this file should be able to run the command `$ node calculator.js` to execute the program.
+You should write your program as a series of statements within the file `calculator.js`. Anyone with this file you should be able to run the command `node calculator.js` to execute the program.
 
 Look at the existing `calculator.js` file. There is a variable to represent example user input. Instead of using `gets.chomp` in this project (or the JavaScript equivalent to start), we will simply use variables like this one.
 
