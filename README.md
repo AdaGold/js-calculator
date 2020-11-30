@@ -24,17 +24,18 @@ Feel free to reference your Ruby calculator project.
 
 We will build a calculator command line interface (CLI) to perform simple arithmetic. The program should use an input variable that contains two numbers and an operation to provide the result of applying the operation to the two numbers.
 
-In the required project, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
+Our JavaScript projects, **our projects will NOT take user input,** and instead **we will use a variable to hold and represent user input.**
 
 ## Setup Requirements
 
 1. Fork this project repo
 1. Clone this repo onto your computer
+1. Run `npm install` to install dependencies
 1. Work on this project, mostly within `calculator.js`
 
 ## Getting Started
 
-You should write your program as a series of statements within the file `calculator.js`. Anyone with this file should be able to run the command `$ node calculator.js` to execute the program.
+You should write your program as a series of statements within the file `calculator.js`. Anyone with this file (including you) should be able to run the command `node calculator.js` to execute the program.
 
 Look at the existing `calculator.js` file. There is a variable to represent example user input. Instead of using `gets.chomp` in this project (or the JavaScript equivalent to start), we will simply use variables like this one.
 
@@ -52,6 +53,35 @@ We're starting the project with a variable (instead of a `gets.chomp` equivalent
 1. It's a little bit of work to get a JavaScript-`gets.chomp` going, and right now our focus is on learning syntax of conditional logic, calling and defining functions, and woring with data.
 
 Feel free to alter or create the variables to your needs.
+
+### Sample Tests
+
+We have also included [tests in this project](./test/calculator.test.js).  You do not need to know how they work at present.  These tests simply insure that if your funciton is called with `promptInput` holding the value:
+
+```javascript
+{
+  num1: 3,
+  num2: 5,
+  operation: 'add',
+}
+```
+
+You will print: "3 + 5 = 8" with `console.log`.
+
+Similarly if `promptInput` has the value:
+
+```javaScript
+{
+  num1: 3,
+  num2: 4,
+  operation: '*',
+}
+
+```
+
+Your funciton will print "3 * 4 = 12".
+
+You can run these tests with the command:  `npm test`.
 
 ## Implementation Requirements
 
@@ -99,9 +129,9 @@ The program should use this input operation and two numbers to provide the resul
 
 </details>
 
-## Testing and Verification Requirement
+## Manual Testing
 
-We haven't dived into unit tests in JavaScript yet, so we need to test and verify our project with tedious, non-automated input.
+We haven't dived into unit tests in JavaScript yet, so _you must test your function manually._  You can run the function and use terminal-based user input with `npm start`, or you can run `calculator.js` manually with `node calculator.js`.  There is an example of manually testing the function in `calculator.js`, written as a comment.
 
 Before project submission, test and verify that your program works as expected with the following testing/verification requirements.
 
@@ -117,40 +147,6 @@ To make sure your program works you will need to run your program and check agai
 ## Optional Enhancements
 
 The following is a list of optionals. Should you be ambitious to continue working on this project beyond the requirements, here is a list of features that are interesting. These enhancements are not listed in any particular order; feel free to pick an enhancement from anywhere in the list!
-
-### Refactor to Accept User Input with `prompt`
-
-- Inside your project root directory, install `prompt` with npm. This package allows for gathering input from a user.
-  + `$ npm install prompt`
-  + When it's done, you should now have a directory called `node_modules`
-- Inside `calculator.js` in your editor and paste this code at the top of your file:
-  ```javascript
-  // This line "loads" the prompt package and puts it into a variable we can use called prompt
-  // Lines like this (that use require()) typically go on the top of the file
-  const prompt = require('prompt');
-  
-  const calculateUserInput = function(error, promptInput) {
-    console.log('This is the value of the promptInput variable that got passed in by prompt, after our prompt package collect user input', promptInput);
-
-    // Questions to ask and answer:
-    // What is promptInput?
-    // What data type? What does it hold? What does it represent?
-    // How do we read values from it? What syntax?
-    // How can we use it?
-    // Can we call our existing functions now, inside of this function?
-  }  
-  
-
-  //start the prompt
-  prompt.start();
-
-  //collect two numbers (num1 and num2) and an operation
-  //then call the function `calculator` with the user input
-  prompt.get(['num1','num2','operation'], calculateUserInput);
-  ```
-- Run your program with `$ node calculator.js`. What happens? What do you see? How do you interact with the program?
-- Use these clues, experimentation, [the prompt package documentation](https://github.com/flatiron/prompt) and individual/collaborative research.
-- Rename and alter the `calculateUserInput` function, and the rest of your project, to use `prompt` to collect user input.
 
 ### Other Enhancements
 
