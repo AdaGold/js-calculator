@@ -35,7 +35,7 @@ Our JavaScript projects, **our projects will NOT take user input,** and instead 
 
 ## Getting Started
 
-You should write your program as a series of statements within the file `calculator.js`. Anyone with this file you should be able to run the command `node calculator.js` to execute the program.
+You should write your program as a series of statements within the file `calculator.js`. Anyone with this file (including you) should be able to run the command `node calculator.js` to execute the program.
 
 Look at the existing `calculator.js` file. There is a variable to represent example user input. Instead of using `gets.chomp` in this project (or the JavaScript equivalent to start), we will simply use variables like this one.
 
