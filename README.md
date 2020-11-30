@@ -131,7 +131,7 @@ The program should use this input operation and two numbers to provide the resul
 
 ## Manual Testing
 
-We haven't dived into unit tests in JavaScript yet, so you may want to try to test your function manually.  You can run the function and use terminal-based user input with `npm start`, or you can run `calculator.js` manually with `node calculator.js`.  There is an example of manually testing the function in `calculator.js` as a comment.
+We haven't dived into unit tests in JavaScript yet, so _you must test your function manually._  You can run the function and use terminal-based user input with `npm start`, or you can run `calculator.js` manually with `node calculator.js`.  There is an example of manually testing the function in `calculator.js`, written as a comment.
 
 Before project submission, test and verify that your program works as expected with the following testing/verification requirements.
 
