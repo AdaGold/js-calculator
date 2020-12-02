@@ -9,7 +9,7 @@ Feel free to reference your Ruby calculator project.
 ## At a Glance
 
 - Individual, [stage 1](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/classroom/rule-of-three.md#stage-1) project
-- Due before class, **DATE HERE**
+- Due before class, **Wednesday December 9th at 9:00am**
 - Submit this project with a PR
 
 ## Learning Goals
@@ -141,8 +141,11 @@ To make sure your program works you will need to run your program and check agai
 *  The program adds numbers accurately with both `multiply` and `*`
 *  The program adds numbers accurately with both `divide` and `/`
 *  The program handles divide when attempting to divide by zero
+   *  Simply print 'You cannot divide by zero'
 *  The program handles erroneous input.  For example the user might enter `clown` when asked to enter a number
-    *  The program also needs to handle erroneous operators
+   *  For erroneous numbers simply print something, if the user entered 'clown' for `num1`, 'clown is not a number'
+   *  The program also needs to handle erroneous operators
+      *  Simply print in this case: 'unsupported operator'
 
 ## Optional Enhancements
 
