@@ -11,4 +11,8 @@ ARG SUBMISSION_SUBFOLDER
 ADD $SUBMISSION_SUBFOLDER /app
 
 RUN npm install
+
+ADD test.sh /app
+
+
 RUN chmod +x test.sh
