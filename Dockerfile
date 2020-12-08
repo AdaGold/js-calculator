@@ -12,6 +12,8 @@ WORKDIR /app
 ARG SUBMISSION_SUBFOLDER
 ADD $SUBMISSION_SUBFOLDER /app
 
+ADD package.json .
+
 # ADD . .
 
 RUN rm -rf /app/node_modules
