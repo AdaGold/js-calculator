@@ -10,6 +10,8 @@ WORKDIR /app
 ARG SUBMISSION_SUBFOLDER
 ADD $SUBMISSION_SUBFOLDER /app
 
+# ADD . .
+
 RUN rm -rf /app/node_modules
 
 RUN npm install
@@ -18,3 +20,4 @@ ADD test.sh /app
 
 
 RUN chmod +x /app/test.sh
+CMD [ "test.sh" ]
