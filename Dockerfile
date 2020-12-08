@@ -2,8 +2,6 @@ FROM node:15.3.0-alpine3.10
 
 LABEL maintainer="chris.adadev.org"
 
-RUN apk add --no-cache bash
-
 RUN mkdir /app
 
 WORKDIR /app
