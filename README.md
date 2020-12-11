@@ -146,6 +146,14 @@ To make sure your program works you will need to run your program and check agai
    *  For erroneous numbers simply print something, if the user entered 'clown' for `num1`, 'clown is not a number'
    *  The program also needs to handle erroneous operators
       *  Simply print in this case: 'unsupported operator'
+      
+## A note about the code format
+
+You'll notice the calculateUserInput function takes two parameters, `error` and `input`. This is to conform to the format expected by the `prompt` package, which is being used when you run `npm start`. You will probably not use the `error` parameter at all and that's totally ok and expected.
+
+If you're curious to see how we're plugging your function into the `prompt` package, checkout the [`index.js`](/index.js) file!
+
+If you're curious to read about this `prompt` package, you can read about it on its [github page](https://github.com/flatiron/prompt)!
 
 ## Optional Enhancements
 
